@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   title: "Neon Stratego · Base",
   description: "Cyberpunk Stratego vs AI — Base check-in",
   other: baseAppId ? { "base:app_id": baseAppId } : {},
-  icons: { icon: "/app-icon.svg" },
+  icons: { icon: "/app-icon.jpg" },
 };
 
 export default function RootLayout({

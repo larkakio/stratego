@@ -15,12 +15,14 @@ const bodyMono = Share_Tech_Mono({
   weight: "400",
 });
 
-const baseAppId = process.env.NEXT_PUBLIC_BASE_APP_ID;
+/** Base.dev app id — verification meta `base:app_id` on the homepage. */
+const baseAppId =
+  process.env.NEXT_PUBLIC_BASE_APP_ID ?? "69ca341d54fba99e37411019";
 
 export const metadata: Metadata = {
   title: "Neon Stratego · Base",
   description: "Cyberpunk Stratego vs AI — Base check-in",
-  other: baseAppId ? { "base:app_id": baseAppId } : {},
+  other: { "base:app_id": baseAppId },
   icons: { icon: "/app-icon.jpg" },
 };
 

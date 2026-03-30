@@ -14,7 +14,7 @@ Or from the repo root:
 npm install --prefix web && npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Production: [https://stratego-five.vercel.app](https://stratego-five.vercel.app) · local dev: [http://localhost:3000](http://localhost:3000).
 
 ## Environment
 

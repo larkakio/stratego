@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#12081f"/>
+      <stop offset="100%" style="stop-color:#050510"/>
+    </linearGradient>
+    <filter id="glowM" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="16" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowC" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1024" height="1024" rx="180" fill="url(#bg)"/>
+  <g transform="translate(512 512)">
+    <path d="M-200-120 L200-120 L240 0 L200 120 L-200 120 L-240 0 Z" fill="none" stroke="#ff2eea" stroke-width="14" filter="url(#glowM)"/>
+    <path d="M-140-60 L140-60 L170 0 L140 60 L-140 60 L-170 0 Z" fill="none" stroke="#00f5ff" stroke-width="10" filter="url(#glowC)"/>
+    <rect x="-90" y="-90" width="180" height="180" rx="12" fill="none" stroke="#39ff14" stroke-width="8" opacity="0.9"/>
+    <text x="0" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="900" font-size="120" fill="#ff2eea" filter="url(#glowM)">S</text>
+  </g>
+</svg>

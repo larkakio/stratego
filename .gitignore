@@ -1,0 +1,16 @@
+.DS_Store
+*.log
+
+# Env secrets (never commit)
+.env
+.env.local
+.env.*.local
+
+# Next.js (web/)
+web/node_modules/
+web/.next/
+web/out/
+
+# Foundry build artifacts & local sensitive cache
+contracts/out/
+contracts/cache/
